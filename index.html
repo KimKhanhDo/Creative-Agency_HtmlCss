@@ -83,8 +83,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Sonsie+One&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <!-- Reset CSS -->
@@ -124,7 +131,209 @@
           </div>
         </div>
         <div class="header-line"></div>
+
+        <!-- Hero -->
+        <section class="hero">
+          <div class="hero__content">
+            <h2 class="hero__heading">We’re a creative design agency.</h2>
+            <p class="hero__desc">
+              A brilliant, modular agency template for startup’s build yours
+              today.
+            </p>
+            <div class="hero__action">
+              <a href="#!" class="btn">Get in touch</a>
+              <a href="#!" class="btn__video">
+                <div class="btn__video-eclipse">
+                  <div class="btn__video-wrap">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <span class="btn__video-span">Watch Video</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__media">
+            <div class="hero__bg">
+              <!-- Background block color -->
+            </div>
+            <figure class="hero__images">
+              <img src="./assets/img/hero-01.jpeg" alt="" class="hero__img" />
+              <img
+                src="./assets/img/hero-02.jpeg"
+                alt=""
+                class="hero__img hero__img-02"
+              />
+              <img src="./assets/img/hero-03.jpeg" alt="" class="hero__img" />
+
+              <!-- Vectors -->
+              <div class="hero__vector--top">
+                <img src="./assets/icons/star.svg" alt="" class="top-star" />
+                <img
+                  src="./assets/icons/vector-top.svg"
+                  alt=""
+                  class="vector-top"
+                />
+              </div>
+              <div class="hero__vector--bottom">
+                <img src="./assets/icons/star.svg" alt="" class="bottom-star" />
+                <img
+                  src="./assets/icons/vector-bottom.svg"
+                  alt=""
+                  class="vector-bottom"
+                />
+              </div>
+            </figure>
+          </div>
+        </section>
       </div>
     </header>
+
+    <main style="height: 5000px">
+      <!-- Brands -->
+      <div class="brand">
+        <div class="container">
+          <div class="brand-body">
+            <div class="brand-body__name">Google</div>
+            <div class="brand-body__name">
+              <img src="./assets/icons/logo-01.svg" alt="" />
+              <span>slack</span>
+            </div>
+            <div class="brand-body__name">
+              <img src="./assets/icons/logo-02.svg" alt="" />
+              <span>Agworld</span>
+            </div>
+            <div class="brand-body__name">Rio Tinto</div>
+            <div class="brand-body__name">
+              <img src="./assets/icons/logo-03.svg" alt="" />
+              <span>HEROKU</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service -->
+      <section class="service">
+        <div class="container">
+          <div class="service__body">
+            <!-- Intro -->
+            <section class="service__intro">
+              <p class="section-title service__intro-title">OUR SERVICES</p>
+              <div class="service__row">
+                <h2 class="section-heading service__intro-heading">
+                  We offer a wide range of design services
+                </h2>
+                <div class="service__action">
+                  <button href="#!" class="service__action-btn">
+                    <svg
+                      width="22"
+                      height="13"
+                      viewBox="0 0 22 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <button href="#!" class="service__action-btn">
+                    <svg
+                      class="service__action--next"
+                      width="22"
+                      height="13"
+                      viewBox="0 0 22 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <!-- Articles -->
+            <div class="service__list">
+              <!-- Article 1 -->
+              <article class="service__item">
+                <figure class="service__image">
+                  <a href="#!">
+                    <img
+                      src="./assets/img/service-01.jpeg"
+                      alt=""
+                      class="service__img"
+                    />
+                  </a>
+                </figure>
+                <div class="service__info">
+                  <h3>
+                    <a href="#!" class="service__heading"> Branding</a>
+                  </h3>
+                  <p class="service__desc">
+                    Create beautiful Agency website with Boluethat converts more
+                    visitors than any website.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Article 2 -->
+              <article class="service__item">
+                <figure class="service__image">
+                  <a href="#!">
+                    <img
+                      src="./assets/img/service-02.jpeg"
+                      alt=""
+                      class="service__img"
+                    />
+                  </a>
+                </figure>
+                <div class="service__info">
+                  <h3>
+                    <a href="#!" class="service__heading">Web Design</a>
+                  </h3>
+                  <p class="service__desc">
+                    Create beautiful Agency website with Boluethat converts more
+                    visitors than any website.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Article 3 -->
+              <article class="service__item">
+                <figure class="service__image">
+                  <a href="#!">
+                    <img
+                      src="./assets/img/service-03.jpeg"
+                      alt=""
+                      class="service__img"
+                    />
+                  </a>
+                </figure>
+                <div class="service__info">
+                  <h3>
+                    <a href="#!" class="service__heading">Graphic Design</a>
+                  </h3>
+                  <p class="service__desc">
+                    Create beautiful Agency website with Boluethat converts more
+                    visitors than any website.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
