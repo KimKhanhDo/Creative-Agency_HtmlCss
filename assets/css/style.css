@@ -839,30 +839,46 @@ a {
 }
 
 .project__body {
-  padding: 116px 130px 63px;
+  padding: 116px 80px 63px;
   background: var(--primary-color);
 }
 
 .project__introduction {
   display: flex;
+  justify-content: space-between;
   column-gap: 93px;
 }
 
 .project__heading {
+  position: relative;
   max-width: 457px;
   color: #e7f9f9;
+  font-size: 4rem;
+  line-height: 52px;
+}
+
+.project__heading::after {
+  position: absolute;
+  bottom: 20px;
+  left: 280px;
+  content: "";
+  width: 66px;
+  height: 2px;
+  background: #83a17d;
 }
 
 .project__desc {
   margin-top: 11px;
   color: #6a8383;
   font-family: "Public Sans";
-  font-size: 1.8rem;
+  text-align: left;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.56;
 }
 
 .project__browser-link {
+  display: block;
   margin-top: 13px;
   display: flex;
   align-items: center;
@@ -873,7 +889,7 @@ a {
   font-weight: 500;
 }
 
-.project__browser-link:hover p {
+.project__browser-link:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -904,7 +920,6 @@ a {
   right: -61px;
 }
 
-/* Make sure video always display at 16:9 ratio */
 .project__video {
   position: relative;
   width: 100%;
