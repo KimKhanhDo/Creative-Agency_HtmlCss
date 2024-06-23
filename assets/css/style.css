@@ -76,6 +76,10 @@ a {
   --line-clamp: 3;
 }
 
+.line-clamp.line-4 {
+  --line-clamp: 4;
+}
+
 .word-break {
   word-break: break-all;
 }
@@ -478,7 +482,8 @@ a {
 
 /* Intro */
 .intro {
-  margin-top: 104px;
+  margin-top: 52px;
+  padding: 52px 0;
 }
 
 .intro__body {
@@ -653,8 +658,8 @@ a {
 
 .intro__section-heading {
   margin-top: 28px;
-  width: 483px;
-  font-size: 4.1rem;
+  width: 490px;
+  font-size: 4.2rem;
 }
 
 .intro__section-desc {
@@ -696,4 +701,134 @@ a {
   width: 485px;
   height: 1px;
   background: #83a17d;
+}
+
+/* Process */
+.process {
+  margin-top: 27px;
+  padding: 36px 0;
+}
+
+.process__title {
+  position: relative;
+  margin-left: 46px;
+  line-height: 1.12;
+}
+
+.process__title::before {
+  position: absolute;
+  bottom: 9px;
+  left: -46px;
+  content: "";
+  width: 25px;
+  height: 1px;
+  background: #152427;
+}
+
+.process__heading {
+  position: relative;
+  margin-top: 20px;
+  line-height: 1.24;
+  max-width: 477px;
+}
+
+.process__heading::after {
+  position: absolute;
+  bottom: 18px;
+  right: -9px;
+  display: inline-block;
+  content: "";
+  width: 66px;
+  height: 2px;
+  background: #152427;
+}
+
+.process__list {
+  margin-top: 81px;
+}
+
+.process__idea {
+  margin-top: 54px;
+  display: flex;
+  align-items: center;
+  padding: 57px 30px;
+  transition: 0.5s;
+}
+
+.process__idea:hover {
+  height: 185px;
+  border-radius: 33px;
+  background: #e2eddf;
+  cursor: pointer;
+}
+
+.process__idea:hover .process__idea-link {
+  display: inline-block;
+}
+
+.process__idea:first-child {
+  position: relative;
+}
+
+.process__idea-span {
+  margin-right: 64px;
+  color: var(--primary-color);
+  font-family: Poppins;
+  font-size: 7.2rem;
+  font-weight: 600;
+  line-height: 0.7;
+}
+
+.process__idea-title {
+  color: #152427;
+  font-family: Poppins;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: 0.5s;
+}
+
+.process__idea-link {
+  display: none;
+  margin-top: 22px;
+  text-decoration: underline;
+  color: #575d5e;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.8px;
+  transition: 0.25s;
+}
+
+.process__idea-desc {
+  max-width: 572px;
+  margin-left: auto;
+  color: #7d8188;
+  font-family: "Public Sans";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.process__idea-img {
+  display: inline-block;
+  position: absolute;
+  top: -337px;
+  right: 92px;
+  margin-top: 79px;
+  margin-left: auto;
+  display: block;
+  width: 450px;
+  object-fit: cover;
+}
+
+.process__idea-break {
+  margin-top: 21px;
+  width: 1131px;
+  height: 3px;
+  background: linear-gradient(
+    180deg,
+    #83a17d 4.17%,
+    rgba(131, 161, 125, 0) 36.46%
+  );
 }
