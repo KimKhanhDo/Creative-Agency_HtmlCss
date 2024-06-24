@@ -835,12 +835,20 @@ a {
 
 /* Project */
 .project {
-  margin-top: 112;
+  margin-top: 112px;
+}
+
+.project__container {
+  width: 1400px;
+  max-width: calc(100% - 48px);
+  background: var(--primary-color);
+  margin: 0 auto;
 }
 
 .project__body {
-  padding: 116px 80px 63px;
-  background: var(--primary-color);
+  width: 81%;
+  margin: 0 auto;
+  padding: 116px 0 63px;
 }
 
 .project__introduction {
@@ -869,10 +877,10 @@ a {
 
 .project__desc {
   margin-top: 11px;
+  max-width: 590px;
   color: #6a8383;
   font-family: "Public Sans";
-  text-align: left;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.56;
 }
